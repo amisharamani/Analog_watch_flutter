@@ -44,6 +44,14 @@ class _Home_pageState extends State<Home_page> {
       Align(alignment: Alignment.center,child: Text("${now.hour}:${now.minute}:${now.second} ",style:
       TextStyle(fontSize: 40,color: Colors.black,fontWeight: FontWeight.bold),),),
       // Text("${timer()}"
+          Container(
+            alignment: Alignment.center,
+           child:  SizedBox(
+             child: CircularProgressIndicator(),
+             height: 200.0,
+             width: 200.0,
+           ),
+          )
         ],
       ),
     );
