@@ -1,6 +1,7 @@
 # core_pr_2_final
 
 A new Flutter project.
+![image](https://user-images.githubusercontent.com/130687844/235622133-f9efe972-4185-43df-85fe-775ee98e6fb7.png)
 
 ## Getting Started
 
