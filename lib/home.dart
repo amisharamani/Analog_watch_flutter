@@ -41,17 +41,31 @@ class _Home_pageState extends State<Home_page> {
           ),
         ),
 
-      Align(alignment: Alignment.center,child: Text("${now.hour}:${now.minute}:${now.second} ",style:
-      TextStyle(fontSize: 40,color: Colors.black,fontWeight: FontWeight.bold),),),
-      // Text("${timer()}"
-          Container(
-            alignment: Alignment.center,
-           child:  SizedBox(
-             child: CircularProgressIndicator(),
-             height: 200.0,
-             width: 200.0,
-           ),
-          )
+      Align(alignment: Alignment.topCenter,child: Text("${now.hour}:${now.minute}:${now.second} ",style:
+      TextStyle(fontSize: 40,color: Colors.black,fontWeight: FontWeight.bold),),
+      ),
+
+      Container(
+              alignment: Alignment.center,
+          child :AnalogClock(
+          decoration: BoxDecoration(
+              border: Border.all(width: 2.0, color: Colors.black),
+          color: Colors.transparent,
+          shape: BoxShape.circle),
+          width: 250.0,
+          isLive: true,
+          hourHandColor: Colors.black,
+          minuteHandColor: Colors.black,
+          showSecondHand: false,
+          numberColor: Colors.black87,
+          showNumbers: true,
+          showAllNumbers: false,
+          textScaleFactor: 1.4,
+          showTicks: false,
+          showDigitalClock: false,
+          datetime: DateTime(2019, 1, 1, 9, 12, 15),
+          ),
+      ),
         ],
       ),
     );
